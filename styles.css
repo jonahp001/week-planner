@@ -1,0 +1,32 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-one {
+  flex-basis: 100%;
+}
+
+.column-seventh {
+  flex-basis: calc(100%/7);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  margin-bottom: 7vw;
+}
+
+.days {
+  width: 100px;
+  height: 100px;
+}
