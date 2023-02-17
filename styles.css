@@ -1,7 +1,16 @@
-.container {
+* {
+  font-family: sans-serif;
   box-sizing: border-box;
+}
+
+.container {
   max-width: 1200px;
   margin: auto;
+}
+
+h1 {
+  font-weight: 500;
+  text-align: center;
 }
 
 .row {
@@ -9,8 +18,10 @@
   justify-content: center;
 }
 
-.column-one {
-  flex-basis: 100%;
+.column-full {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .column-seventh {
@@ -22,11 +33,37 @@
   display: none;
 }
 
-.title {
-  margin-bottom: 7vw;
+.days {
+  width: 9vw;
+  height: 7vw;
+  margin: 5vw 0;
+  border: 3px solid black;
+  background-color: white;
+  font-size: 1.4vw;
 }
 
-.days {
-  width: 100px;
-  height: 100px;
+.days:hover {
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+#add-entry-button {
+  width: 19vw;
+  height: 4vw;
+  text-align: center;
+  background-color: white;
+  box-shadow: 4px 4px #000;
+  border: 3px solid black;
+}
+
+#add-entry-button:hover {
+  background-color: #95bcf2;
+  cursor: pointer;
+}
+
+.modal-bg {
+  position: fixed;
+  background-color: black;
+  inset: 0;
+  opacity: 50%;
 }
