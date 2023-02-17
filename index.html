@@ -44,18 +44,18 @@
       </div>
     </div>
     <div class="row">
-      <div class="modal-bg">
+      <div class="modal-bg hidden">
         <form class="modal-window">
           <h2>Add Entry</h2>
           <div class="add-entry-dropdown">
             <select name="week" id="week">
               <option value="sunday">Sunday</option>
-              <option value="sunday">Monday</option>
-              <option value="sunday">Tuesday</option>
-              <option value="sunday">Wednesday</option>
-              <option value="sunday">Thursday</option>
-              <option value="sunday">Friday</option>
-              <option value="sunday">Saturday</option>
+              <option value="monday">Monday</option>
+              <option value="tueday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
             </select>
             <select name="time" id="time">
               <option>1:00</option>
@@ -73,10 +73,12 @@
             </select>
           </div>
           <textarea id="textarea-add-description" name="description" placeholder="Decription"></textarea>
+          <button class="submit">Submit</button>
         </form>
       </div>
     </div>
   </div>
+  <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
